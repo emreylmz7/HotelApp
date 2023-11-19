@@ -1,0 +1,22 @@
+@model ServiceUpdateDto
+
+<form action="" method="post">
+
+    <input type="hidden" asp-for="ServiceID">
+
+    <label>Service Icon</label>
+    <input type="text" asp-for="ServiceIcon" class="form-control">
+    <span asp-validation-for="ServiceIcon" class="text-danger"></span>
+    <br>
+    <label>Service Title</label>
+    <input type="text" asp-for="Title" class="form-control">
+    <span asp-validation-for="Title" class="text-danger"></span>
+    <br>
+    <label>Description</label>
+    <input type="text" asp-for="Description" class="form-control">
+    <span asp-validation-for="Description" class="text-danger"></span>
+    <br>
+
+    <button class="btn btn-primary">Update Service</button>
+
+</form>

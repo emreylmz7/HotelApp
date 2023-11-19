@@ -1,0 +1,25 @@
+@model List<ServiceResultDto>
+
+<table class="table tavle-bordered">
+    <tr>
+        <th>#</th>
+        <th>Service Title</th>
+        <th>Delete</th>
+        <th>Update</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.ServiceID</td>
+            <td>@item.Title</td>
+            <td>
+                <a href="/Service/DeleteService/@item.ServiceID" class="btn mb-1 btn-rounded btn-outline-danger">Delete</a>
+            </td>
+            <td>
+                <a href="/Service/UpdateService/@item.ServiceID" class="btn mb-1 btn-rounded btn-outline-success">Update</a>
+            </td>
+        </tr>
+    }
+</table>
+
+<a href="/Service/AddService/" class="btn btn-info">Create New Service</a>

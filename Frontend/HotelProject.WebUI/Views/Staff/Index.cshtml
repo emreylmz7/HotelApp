@@ -1,0 +1,31 @@
+@model List<StaffViewModel>
+
+<table class="table tavle-bordered">
+    <tr>
+        <th>#</th>
+        <th>Employee Name</th>
+        <th>Employee Title</th>
+        <th>Delete</th>
+        <th>Update</th>
+        <th>Details</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.StaffID</td>
+            <td>@item.Name</td>
+            <td>@item.Title</td>
+            <td>
+                <a href="/Staff/DeleteStaff/@item.StaffID" class="btn mb-1 btn-rounded btn-outline-danger">Delete</a>
+            </td>
+            <td>
+                <a href="/Staff/UpdateStaff/@item.StaffID" class="btn mb-1 btn-rounded btn-outline-success">Update</a>
+            </td>
+            <td>
+                <a href="#" class="btn mb-1 btn-rounded btn-outline-dark">Details</a>
+            </td>
+        </tr>
+    }
+</table>
+
+<a href="/Staff/AddStaff/" class="btn btn-info">New Employee Create</a>

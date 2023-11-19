@@ -1,0 +1,32 @@
+@model List<TestimonialViewModel>
+
+<table class="table tavle-bordered">
+    <tr>
+        <th>#</th>
+        <th>Testimonial Image</th>
+        <th>Testimonial Name</th>
+        <th>Testimonial Title</th>
+        <th>Delete</th>
+        <th>Update</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.TestimonialID</td>
+            <td>Image</td>
+            <td>@item.Name</td>
+            <td>@item.Title</td>
+            <td>
+                <a href="/Staff/DeleteStaff/@item.TestimonialID" class="btn mb-1 btn-rounded btn-outline-danger">Delete</a>
+            </td>
+            <td>
+                <a href="/Staff/UpdateStaff/@item.TestimonialID" class="btn mb-1 btn-rounded btn-outline-success">Update</a>
+            </td>
+            <td>
+                <a href="#" class="btn mb-1 btn-rounded btn-outline-dark">Details</a>
+            </td>
+        </tr>
+    }
+</table>
+
+<a href="/Staff/AddStaff/" class="btn btn-info">New Employee Create</a>

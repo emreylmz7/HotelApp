@@ -1,0 +1,434 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProjectAPI\\HotelProjectAPI.csproj": {}
+  },
+  "projects": {
+    "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.BusinessLayer\\HotelProject.BusinessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.BusinessLayer\\HotelProject.BusinessLayer.csproj",
+        "projectName": "HotelProject.BusinessLayer",
+        "projectPath": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.BusinessLayer\\HotelProject.BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\EMRE YILMAZ\\.nuget\\packages\\",
+        "outputPath": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.BusinessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EMRE YILMAZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.DataAccessLayer\\HotelProject.DataAccessLayer.csproj": {
+                "projectPath": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.DataAccessLayer\\HotelProject.DataAccessLayer.csproj"
+              },
+              "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.EntityLayer\\HotelProject.EntityLayer.csproj": {
+                "projectPath": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.EntityLayer\\HotelProject.EntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.DataAccessLayer\\HotelProject.DataAccessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.DataAccessLayer\\HotelProject.DataAccessLayer.csproj",
+        "projectName": "HotelProject.DataAccessLayer",
+        "projectPath": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.DataAccessLayer\\HotelProject.DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\EMRE YILMAZ\\.nuget\\packages\\",
+        "outputPath": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.DataAccessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EMRE YILMAZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.EntityLayer\\HotelProject.EntityLayer.csproj": {
+                "projectPath": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.EntityLayer\\HotelProject.EntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.DtoLayer\\HotelProject.DtoLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.DtoLayer\\HotelProject.DtoLayer.csproj",
+        "projectName": "HotelProject.DtoLayer",
+        "projectPath": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.DtoLayer\\HotelProject.DtoLayer.csproj",
+        "packagesPath": "C:\\Users\\EMRE YILMAZ\\.nuget\\packages\\",
+        "outputPath": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.DtoLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EMRE YILMAZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.EntityLayer\\HotelProject.EntityLayer.csproj": {
+                "projectPath": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.EntityLayer\\HotelProject.EntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.EntityLayer\\HotelProject.EntityLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.EntityLayer\\HotelProject.EntityLayer.csproj",
+        "projectName": "HotelProject.EntityLayer",
+        "projectPath": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.EntityLayer\\HotelProject.EntityLayer.csproj",
+        "packagesPath": "C:\\Users\\EMRE YILMAZ\\.nuget\\packages\\",
+        "outputPath": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.EntityLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EMRE YILMAZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProjectAPI\\HotelProjectAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProjectAPI\\HotelProjectAPI.csproj",
+        "projectName": "HotelProjectAPI",
+        "projectPath": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProjectAPI\\HotelProjectAPI.csproj",
+        "packagesPath": "C:\\Users\\EMRE YILMAZ\\.nuget\\packages\\",
+        "outputPath": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProjectAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EMRE YILMAZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.BusinessLayer\\HotelProject.BusinessLayer.csproj": {
+                "projectPath": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.BusinessLayer\\HotelProject.BusinessLayer.csproj"
+              },
+              "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.DataAccessLayer\\HotelProject.DataAccessLayer.csproj": {
+                "projectPath": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.DataAccessLayer\\HotelProject.DataAccessLayer.csproj"
+              },
+              "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.DtoLayer\\HotelProject.DtoLayer.csproj": {
+                "projectPath": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.DtoLayer\\HotelProject.DtoLayer.csproj"
+              },
+              "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.EntityLayer\\HotelProject.EntityLayer.csproj": {
+                "projectPath": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\ApiConsume\\HotelProject.EntityLayer\\HotelProject.EntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
