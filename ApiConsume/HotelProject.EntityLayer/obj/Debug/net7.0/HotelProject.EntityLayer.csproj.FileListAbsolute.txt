@@ -12,3 +12,4 @@ D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProject.EntityLayer\obj\Debu
 D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProject.EntityLayer\obj\Debug\net7.0\HotelProject.EntityLayer.pdb
 D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProject.EntityLayer\obj\Debug\net7.0\HotelProject.EntityLayer.genruntimeconfig.cache
 D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProject.EntityLayer\obj\Debug\net7.0\ref\HotelProject.EntityLayer.dll
+D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProject.EntityLayer\obj\Debug\net7.0\HotelProject.EntityLayer.sourcelink.json

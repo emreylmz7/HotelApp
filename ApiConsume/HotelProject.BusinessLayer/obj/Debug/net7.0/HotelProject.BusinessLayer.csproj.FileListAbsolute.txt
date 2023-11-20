@@ -17,3 +17,4 @@ D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProject.BusinessLayer\obj\De
 D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProject.BusinessLayer\obj\Debug\net7.0\HotelProject.BusinessLayer.pdb
 D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProject.BusinessLayer\obj\Debug\net7.0\HotelProject.BusinessLayer.genruntimeconfig.cache
 D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProject.BusinessLayer\obj\Debug\net7.0\ref\HotelProject.BusinessLayer.dll
+D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProject.BusinessLayer\obj\Debug\net7.0\HotelProject.BusinessLayer.sourcelink.json

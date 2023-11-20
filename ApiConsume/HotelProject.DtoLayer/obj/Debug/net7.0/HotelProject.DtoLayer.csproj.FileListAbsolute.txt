@@ -15,3 +15,4 @@ D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProject.DtoLayer\obj\Debug\n
 D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProject.DtoLayer\obj\Debug\net7.0\HotelProject.DtoLayer.pdb
 D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProject.DtoLayer\obj\Debug\net7.0\HotelProject.DtoLayer.genruntimeconfig.cache
 D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProject.DtoLayer\obj\Debug\net7.0\ref\HotelProject.DtoLayer.dll
+D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProject.DtoLayer\obj\Debug\net7.0\HotelProject.DtoLayer.sourcelink.json
