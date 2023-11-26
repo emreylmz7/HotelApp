@@ -1,0 +1,18 @@
+@model UpdateGuestDto
+
+<form action="" method="post">
+
+    <input type="hidden" asp-for="GuestID">
+    <label>Name</label>
+    <input type="text" asp-for="Name" class="form-control">
+    <br>
+    <label>Surname</label>
+    <input type="text" asp-for="Surname" class="form-control">
+    <br>
+    <label>City</label>
+    <input type="text" asp-for="City" class="form-control">
+    <br>
+
+    <button class="btn btn-primary">Add Guest</button>
+
+</form>

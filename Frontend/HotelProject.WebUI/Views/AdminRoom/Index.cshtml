@@ -1,0 +1,51 @@
+@model List<ResultRoomDto>
+
+@{
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+    int count = 0;
+}
+
+<table class="table tavle-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Room Number</th>
+            <th>Price</th>
+            <th>Title</th>
+            <th>Bed Count</th>
+            <th>Bath Count</th>
+            <th>Wifi</th>
+            <th>Description</th>
+            <th>Delete</th>
+            <th>Update</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            count++;
+            <tr>
+                <td>@count</td>
+                <td>@item.RoomNumber</td>
+                <td>@item.Price $</td>
+                <td>@item.Title</td>
+                <td>@item.BedCount</td>
+                <td>@item.BathCount</td>
+                <td>@item.Wifi</td>
+                <td>@item.Description</td>
+                <td>
+                    <a href="/AdminRoom/DeleteRoom/@item.RoomID" class="btn mb-1 btn-rounded btn-outline-danger">Delete</a>
+                </td>
+                <td>
+                    <a href="/AdminRoom/UpdateRoom/@item.RoomID" class="btn mb-1 btn-rounded btn-outline-success">Update</a>
+                </td>
+                <td>
+                    <a href="#" class="btn mb-1 btn-rounded btn-outline-dark">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/AdminRoom/AddRoom/" class="btn btn-info">New Room Create</a>

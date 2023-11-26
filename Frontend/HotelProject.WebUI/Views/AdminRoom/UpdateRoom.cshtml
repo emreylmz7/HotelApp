@@ -1,0 +1,36 @@
+@model UpdateRoomDto
+
+<form action="" method="post">
+
+    <input type="hidden" asp-for="RoomID">
+
+    <label>Room Number</label>
+    <input type="text" asp-for="RoomNumber" class="form-control">
+    <br>
+    <label>Room Cover Image</label>
+    <input type="text" asp-for="RoomCoverImage" class="form-control">
+    <br>
+    <label>Price</label>
+    <input type="text" asp-for="Price" class="form-control">
+    <br>
+    <label>Title</label>
+    <input type="text" asp-for="Title" class="form-control">
+    <br>
+    <label>Number of Beds</label>
+    <input type="text" asp-for="BedCount" class="form-control">
+    <br>
+    <label>Number of Baths</label>
+    <input type="text" asp-for="BathCount" class="form-control">
+    <br>
+    <label>Wifi</label>
+    <select asp-for="Wifi" class="form-control">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+    <label>Description</label>
+    <input type="text" asp-for="Description" class="form-control">
+    <br>
+
+    <button class="btn btn-primary">Add Room</button>
+
+</form>

@@ -1,0 +1,26 @@
+@model UpdateAboutDto
+
+<form action="" method="post">
+
+    <input type="hidden" asp-for="AboutID">
+
+    <label>Title 1</label>
+    <input type="text" asp-for="Title1" class="form-control">
+    <br>
+    <label>Title 2</label>
+    <input type="text" asp-for="Title2" class="form-control">
+    <br>
+    <label>Content</label>
+    <input type="text" asp-for="Content" class="form-control">
+    <br>
+    <label>Staff Count</label>
+    <input type="text" asp-for="StaffCount" class="form-control">
+    <br>
+    <label>Room Count</label>
+    <input type="text" asp-for="RoomCount" class="form-control">
+    <br>
+    <label>Customer Count</label>
+    <input type="text" asp-for="CustomerCount" class="form-control">
+    <br>
+    <button class="btn btn-outline-success">Update</button>
+</form>

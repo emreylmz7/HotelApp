@@ -1,0 +1,45 @@
+@model List<ResultGuestDto>
+
+@{
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+    int count = 0;
+}
+
+<table class="table tavle-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>City</th>
+            <th>Delete</th>
+            <th>Update</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            count++;
+            <tr>
+                <td>@count</td>
+                <td>@item.Name</td>
+                <td>@item.Surname</td>
+                <td>@item.City</td>
+                <td>
+                    <!-- Adjust the href accordingly for Delete action -->
+                    <a href="/Guest/DeleteGuest/@item.GuestID" class="btn mb-1 btn-rounded btn-outline-danger">Delete</a>
+                </td>
+                <td>
+                    <!-- Adjust the href accordingly for Update action -->
+                    <a href="/Guest/UpdateGuest/@item.GuestID" class="btn mb-1 btn-rounded btn-outline-success">Update</a>
+                </td>
+                <td>
+                    <a href="#" class="btn mb-1 btn-rounded btn-outline-dark">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/Guest/AddGuest/" class="btn btn-info">New Guest Create</a>
