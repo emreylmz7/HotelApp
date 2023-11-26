@@ -85,3 +85,7 @@ D:\Web Dev. Road\.Net Core\HotelApp\Frontend\HotelProject.WebUI\bin\Debug\net7.0
 D:\Web Dev. Road\.Net Core\HotelApp\Frontend\HotelProject.WebUI\bin\Debug\net7.0\HotelProject.DataAccessLayer.dll
 D:\Web Dev. Road\.Net Core\HotelApp\Frontend\HotelProject.WebUI\bin\Debug\net7.0\HotelProject.DataAccessLayer.pdb
 D:\Web Dev. Road\.Net Core\HotelApp\Frontend\HotelProject.WebUI\obj\Debug\net7.0\HotelProject.WebUI.sourcelink.json
+D:\Web Dev. Road\.Net Core\HotelApp\Frontend\HotelProject.WebUI\bin\Debug\net7.0\FluentValidation.dll
+D:\Web Dev. Road\.Net Core\HotelApp\Frontend\HotelProject.WebUI\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+D:\Web Dev. Road\.Net Core\HotelApp\Frontend\HotelProject.WebUI\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Web Dev. Road\.Net Core\HotelApp\Frontend\HotelProject.WebUI\obj\Debug\net7.0\HotelProject.WebUI.MvcApplicationPartsAssemblyInfo.cs

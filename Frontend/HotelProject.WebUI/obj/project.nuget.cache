@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NSmIOMcWsmeWYgS47TrSuc3aXndFsfvuVoB0/MykP7y+1SJUsgcR7Ga9n7rL3rGKx1yroNNIFIVwPSFYd5pOyA==",
+  "dgSpecHash": "S3m4XQlJpHKsxCveP2F1rL/v4VeqYEtgJwjDCSNnqA+uhoBcN9AgOL/WaWVcZZXPfnCqk4K+a99Gkj3K2ryj4w==",
   "success": true,
   "projectFilePath": "D:\\Web Dev. Road\\.Net Core\\HotelApp\\Frontend\\HotelProject.WebUI\\HotelProject.WebUI.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,9 @@
     "C:\\Users\\EMRE YILMAZ\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\EMRE YILMAZ\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\EMRE YILMAZ\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\EMRE YILMAZ\\.nuget\\packages\\fluentvalidation\\11.8.1\\fluentvalidation.11.8.1.nupkg.sha512",
+    "C:\\Users\\EMRE YILMAZ\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\EMRE YILMAZ\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.8.1\\fluentvalidation.dependencyinjectionextensions.11.8.1.nupkg.sha512",
     "C:\\Users\\EMRE YILMAZ\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\EMRE YILMAZ\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\EMRE YILMAZ\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
