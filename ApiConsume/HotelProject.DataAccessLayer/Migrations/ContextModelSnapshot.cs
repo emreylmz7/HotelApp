@@ -250,7 +250,10 @@ namespace HotelProject.DataAccessLayer.Migrations
 
                     b.HasKey("GuestID");
 
-                    b.ToTable("Guests");
+                    b.ToTable("Guests", null, t =>
+                        {
+                            t.HasTrigger("GuestsCountTrigger");
+                        });
                 });
 
             modelBuilder.Entity("HotelProject.EntityLayer.Concrete.Room", b =>
@@ -287,7 +290,44 @@ namespace HotelProject.DataAccessLayer.Migrations
 
                     b.HasKey("RoomID");
 
-                    b.ToTable("Rooms");
+                    b.ToTable("Rooms", null, t =>
+                        {
+                            t.HasTrigger("RoomsCountTrigger");
+                        });
+                });
+
+            modelBuilder.Entity("HotelProject.EntityLayer.Concrete.SendMessage", b =>
+                {
+                    b.Property<int>("SendMessageID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SendMessageID"));
+
+                    b.Property<string>("Content")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ReceiverMail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ReceiverName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SenderMail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SenderName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("SendMessageID");
+
+                    b.ToTable("SendMessages");
                 });
 
             modelBuilder.Entity("HotelProject.EntityLayer.Concrete.Service", b =>
@@ -337,7 +377,10 @@ namespace HotelProject.DataAccessLayer.Migrations
 
                     b.HasKey("StaffID");
 
-                    b.ToTable("Staffs");
+                    b.ToTable("Staffs", null, t =>
+                        {
+                            t.HasTrigger("StaffsCountTrigger");
+                        });
                 });
 
             modelBuilder.Entity("HotelProject.EntityLayer.Concrete.Subscribe", b =>
