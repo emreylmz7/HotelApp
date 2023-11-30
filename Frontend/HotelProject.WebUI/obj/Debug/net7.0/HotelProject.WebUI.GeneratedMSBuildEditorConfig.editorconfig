@@ -26,6 +26,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5BYm91dFxVcGRhdGVBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Web Dev. Road/.Net Core/HotelApp/Frontend/HotelProject.WebUI/Views/AdminBooking/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Cb29raW5nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Web Dev. Road/.Net Core/HotelApp/Frontend/HotelProject.WebUI/Views/AdminContact/AddSendMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Db250YWN0XEFkZFNlbmRNZXNzYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -52,6 +56,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Web Dev. Road/.Net Core/HotelApp/Frontend/HotelProject.WebUI/Views/AdminContact/SideBarAdminContactPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Db250YWN0XFNpZGVCYXJBZG1pbkNvbnRhY3RQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web Dev. Road/.Net Core/HotelApp/Frontend/HotelProject.WebUI/Views/AdminFile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5GaWxlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Web Dev. Road/.Net Core/HotelApp/Frontend/HotelProject.WebUI/Views/AdminLayout/FooterPartial.cshtml]
@@ -86,6 +94,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRcX0FkbWluTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Web Dev. Road/.Net Core/HotelApp/Frontend/HotelProject.WebUI/Views/AdminMail/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5NYWlsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Web Dev. Road/.Net Core/HotelApp/Frontend/HotelProject.WebUI/Views/AdminRoom/AddRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Sb29tXEFkZFJvb20uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -96,10 +108,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Web Dev. Road/.Net Core/HotelApp/Frontend/HotelProject.WebUI/Views/AdminRoom/UpdateRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Sb29tXFVwZGF0ZVJvb20uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Web Dev. Road/.Net Core/HotelApp/Frontend/HotelProject.WebUI/Views/BookingAdmin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ0FkbWluXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Web Dev. Road/.Net Core/HotelApp/Frontend/HotelProject.WebUI/Views/Booking/AddBooking.cshtml]
@@ -124,6 +132,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Web Dev. Road/.Net Core/HotelApp/Frontend/HotelProject.WebUI/Views/Default/_SubscribePartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxfU3Vic2NyaWJlUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web Dev. Road/.Net Core/HotelApp/Frontend/HotelProject.WebUI/Views/Error/Error404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcRXJyb3I0MDQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Web Dev. Road/.Net Core/HotelApp/Frontend/HotelProject.WebUI/Views/Guest/AddGuest.cshtml]
