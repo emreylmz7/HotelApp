@@ -93,7 +93,7 @@ namespace HotelProject.WebUI.Controllers
             return View();
         }
 
-        public async Task<PartialViewResult> SideBarAdminContactPartial()
+        public PartialViewResult SideBarAdminContactPartial()
         {
             return PartialView();
         }
