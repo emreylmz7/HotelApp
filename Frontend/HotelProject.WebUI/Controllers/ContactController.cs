@@ -5,8 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HotelProject.WebUI.Dtos.ContactDto;
+using HotelProject.WebUI.Dtos.MessageCategoryDto;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
@@ -22,9 +24,20 @@ namespace HotelProject.WebUI.Controllers
         }
 
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-             return View();
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync("http://localhost:5224/api/MessageCategory");
+            var jsonData = await responseMessage.Content.ReadAsStringAsync();
+            var values = JsonConvert.DeserializeObject<List<MessageCategoryResultDto>>(jsonData);
+            
+            List<SelectListItem> values2 = (from x in values select new SelectListItem {
+                Text = x.MessageCategoryName,
+                Value = x.MessageCategoryID.ToString()
+            }).ToList();
+
+            ViewBag.v = values2;
+            return View();
         }
 
         [HttpGet]
