@@ -1,0 +1,92 @@
+@model List<ResultAppUserDto>
+
+@{
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+    int count = 0;
+}
+
+
+
+<table class="table table-xs mb-0">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Image</th>
+            <th>Full Name</th>
+            <th>Gender</th>
+            <th>City</th>
+            <th>Departmant</th>
+            <th>Work Location</th>
+            <th>Status</th>
+            @* <th>Delete</th>
+            <th>Update</th> *@
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            count++;
+            <tr>
+                <td>@count</td>
+                <td><img src="~/adminweb/images/avatar/@item.ImageUrl" class=" rounded-circle mr-3" alt="@item.Name @item.Surname"></td>
+                <td>@item.Name @item.Surname</td>
+                <td>
+                    @if (@item.Gender == "Male")
+                    {
+                        <i class="fa fa-circle-o text-success mr-2"></i>
+                    }
+                    else if (@item.Gender == "Female")
+                    {
+                        <i class="fa fa-circle-o text-warning mr-2"></i>
+                    }
+                    else
+                    {
+                        <i class="fa fa-circle-o text-secondary mr-2"></i>
+                    }
+                    @item.Gender
+                </td>
+                <td>
+                    <span>@item.City</span>
+                </td>
+                <td>@item.WorkDepartmant</td>
+                <td>@item.WorkLocation!.Name</td>
+                <td>
+                    @if (@item.Gender == "Male")
+                    {
+                        <div>
+                            <div class="progress" style="height: 6px">
+                                <div class="progress-bar bg-success" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    }
+                    else if (@item.Gender == "Female")
+                    {
+                        <div>
+                            <div class="progress" style="height: 6px">
+                                <div class="progress-bar bg-warning" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div>
+                            <div class="progress" style="height: 6px">
+                                <div class="progress-bar bg-secondary" style="width: 20%"></div>
+                            </div>
+                        </div>
+                    }   
+                </td>    
+                @* <td>
+                    <a href="/AdminUs/DeleteRoom/@item.Id" class="btn mb-1 btn-rounded btn-outline-danger">Delete</a>
+                </td>
+                <td>
+                    <a href="/AdminRoom/UpdateRoom/@item.Id" class="btn mb-1 btn-rounded btn-outline-success">Update</a>
+                </td> *@
+            </tr>
+        }
+        
+    </tbody>
+</table>
+<br>
+
+

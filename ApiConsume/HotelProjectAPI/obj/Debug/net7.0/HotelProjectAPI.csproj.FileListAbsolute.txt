@@ -91,3 +91,7 @@ D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProjectAPI\bin\Debug\net7.0\
 D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProjectAPI\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
 D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProjectAPI\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
 D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProjectAPI\obj\Debug\net7.0\HotelProjectAPI.sourcelink.json
+D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProjectAPI\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProjectAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProjectAPI\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\Web Dev. Road\.Net Core\HotelApp\ApiConsume\HotelProjectAPI\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
