@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using HotelProject.BusinessLayer.Abstract;
+using HotelProject.DataAccessLayer.Concrete;
 using HotelProject.EntityLayer.Concrete;
+using HotelProjectAPI.Model;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace HotelProjectAPI.Controllers
 {
@@ -18,10 +21,27 @@ namespace HotelProjectAPI.Controllers
             _appUserService = appUserService;
         }
 
-        [HttpGet]
+        [HttpGet("UserListWithWorkLocation")]
         public IActionResult UserListWithWorkLocation()
         {
-            var values = _appUserService.TUserListWithWorkLocation();
+            Context context = new Context();
+            var values = context.Users
+                                .Include(x => x.WorkLocation)
+                                .Select(y => new UserWithWorkLocationDto
+                                {
+                                    Name = y.Name,
+                                    Surname = y.Surname,
+                                    Gender = y.Gender,
+                                    Country = y.Country,
+                                    City = y.City,
+                                    ImageUrl = y.ImageUrl,
+                                    WorkDepartmant = y.WorkDepartmant,
+                                    WorkLocationID = y.WorkLocation!.WorkLocationID, 
+                                    WorkLocationName = y.WorkLocation.Name
+                                })
+                                .ToList();
+
+            // var values = _appUserService.TUserListWithWorkLocation();
             return Ok(values);
         }
 

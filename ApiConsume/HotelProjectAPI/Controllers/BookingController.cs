@@ -26,6 +26,13 @@ namespace HotelProjectAPI.Controllers
             return Ok(values);
         }
 
+        [HttpGet("BookingCount")]
+        public IActionResult BookingCount()
+        {
+            var values = _bookingService.TGetBookingCount();
+            return Ok(values);
+        }
+
         [HttpPost]
         public IActionResult AddBooking(Booking booking)
         {

@@ -8,6 +8,6 @@ namespace HotelProject.DataAccessLayer.Abstract
 {
     public interface IGuestDal: IGenericDal<Guest>
     {
-        
+        int GetGuestCount();
     }
 }

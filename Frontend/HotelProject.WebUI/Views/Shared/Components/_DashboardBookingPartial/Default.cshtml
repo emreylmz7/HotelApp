@@ -1,0 +1,74 @@
+@model List<BookingResultDto>
+@{
+    int count = 0;
+    int number = 1;
+    string imageUrl = "";
+
+    var statusColors = new Dictionary<BookingStatus, string>
+    {
+        { BookingStatus.Pending, "bg-warning" },
+        { BookingStatus.Confirmed, "bg-success" },
+        { BookingStatus.Canceled, "bg-danger" },
+        { BookingStatus.CheckedIn, "bg-info" },
+        { BookingStatus.CheckedOut, "bg-info" },
+        { BookingStatus.InProgress, "bg-primary" },
+        { BookingStatus.Completed, "bg-secondary" },
+        { BookingStatus.NoShow, "bg-dark" },
+        { BookingStatus.CustomerBeingSearched, "bg-light" }
+    };
+}
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="active-member">
+                    <div class="table-responsive">
+                        <table class="table table-xs mb-0">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>City / Country</th>
+                                    <th>Check-In</th>
+                                    <th>Check-Out</th>
+                                    <th>Status</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach(var item in Model)
+                                {
+                                    count++;
+                                    number++;
+                                    imageUrl = $"{number}.jpg";
+                                    <tr>
+                                        <td>@count</td>
+                                        <td><img src="~/adminweb/images/avatar/@imageUrl" class=" rounded-circle mr-3" alt="">@item.Name</td>
+                                        <td>@item.Mail</td>
+                                        <td>@item.City / @item.Country</td>
+                                        <td>@item.CheckIn.ToString("MM/dd/yyyy")</td>
+                                        <td>@item.CheckOut.ToString("MM/dd/yyyy")</td>
+                                        <td>
+                                            @if (statusColors.TryGetValue(item.Status.GetValueOrDefault(), out var color))
+                                            {
+                                                <div class="status-container">
+                                                    <div class="progress" style="height: 6px">
+                                                        <div class="progress-bar @color" style="width: 100%"></div>
+                                                    </div>
+                                                </div>
+                                            }
+                                        </td>
+                                        <td><div class="status-text">@item.Status</div></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>                        
+    </div>
+</div>

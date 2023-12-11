@@ -1,0 +1,27 @@
+@model List<TestimonialResultDto>
+
+<div class="col-xl-6 col-lg-12 col-sm-12 col-xxl-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Comments</h4>
+                <div id="activity">
+                    @foreach(var item in Model)
+                    {
+                        <div class="media border-bottom-1 pt-3 pb-3">
+                            <img width="35" src="@item.Image" class="mr-3 rounded-circle">
+                            <div class="media-body">
+                                <h5>@item.Title</h5>
+                                <p class="mb-0">
+                                    @item.Description?.Substring(0, Math.Min(60 , item.Description.Length))
+                                    @if(item.Description?.Length > 70)
+                                    {
+                                        <span>...</span>
+                                    }
+                                </p>
+                            </div><span class="text-muted ">April 14, 2023</span>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>

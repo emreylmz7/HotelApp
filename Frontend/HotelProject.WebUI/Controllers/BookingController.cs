@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HotelProject.EntityLayer.Concrete;
 using HotelProject.WebUI.Dtos.BookingDto;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -36,7 +37,7 @@ namespace HotelProject.WebUI.Controllers
         [HttpPost]
         public async Task<IActionResult> AddBooking(BookingCreateDto bookingCreateDto)
         {
-            bookingCreateDto.Status = "In Review";
+            bookingCreateDto.Status = BookingStatus.Pending;
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(bookingCreateDto);
             StringContent stringContent = new StringContent(jsonData,Encoding.UTF8,"application/json");

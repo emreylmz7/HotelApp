@@ -10,6 +10,8 @@ namespace HotelProject.EntityLayer.Concrete
         public int BookingID { get; set; }
         public string? Name { get; set; }
         public string? Mail { get; set; }
+        public string? City { get; set; }
+        public string? Country { get; set; }
         public DateTime CheckIn { get; set; }
         public DateTime CheckOut { get; set; }
         public string? AdultCount { get; set; }
@@ -17,6 +19,19 @@ namespace HotelProject.EntityLayer.Concrete
         public string? RoomCount { get; set; }
         public string? SpecialRequest { get; set; }
         public string? Description { get; set; }
-        public string? Status { get; set; }
+        public BookingStatus? Status { get; set; }
+    }
+
+    public enum BookingStatus
+    {
+        Pending,
+        Confirmed,
+        Canceled,
+        CheckedIn,
+        CheckedOut,
+        InProgress,
+        Completed,
+        NoShow,
+        CustomerBeingSearched
     }
 }

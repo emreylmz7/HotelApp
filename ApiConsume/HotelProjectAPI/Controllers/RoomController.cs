@@ -27,6 +27,13 @@ namespace HotelProjectAPI.Controllers
             return Ok(values);
         }
 
+        [HttpGet("RoomCount")]
+        public IActionResult RoomCount()
+        {
+            var values = _roomService.TGetRoomCount();
+            return Ok(values);
+        }
+
         [HttpPost]
         public IActionResult AddRoom(Room room)
         {

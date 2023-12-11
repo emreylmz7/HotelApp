@@ -197,6 +197,12 @@ namespace HotelProject.DataAccessLayer.Migrations
                     b.Property<string>("ChildCount")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Country")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
@@ -212,8 +218,8 @@ namespace HotelProject.DataAccessLayer.Migrations
                     b.Property<string>("SpecialRequest")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Status")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("Status")
+                        .HasColumnType("int");
 
                     b.HasKey("BookingID");
 

@@ -24,6 +24,13 @@ namespace HotelProjectAPI.Controllers
             return Ok(values);
         }
 
+        [HttpGet("GetStaffCount")]
+        public IActionResult GetStaffCount()
+        {
+            var values = _staffService.TGetStaffCount();
+            return Ok(values);
+        }
+
         [HttpPost]
         public IActionResult AddStaff(Staff staff)
         {

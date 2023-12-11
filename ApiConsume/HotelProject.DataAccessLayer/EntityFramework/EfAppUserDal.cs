@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using HotelProject.DataAccessLayer.Abstract;
 using HotelProject.DataAccessLayer.Concrete;
 using HotelProject.DataAccessLayer.Repositories;
@@ -19,7 +15,11 @@ namespace HotelProject.DataAccessLayer.EntityFramework
         public List<AppUser> UserWithWorkLocation()
         {
             var context = new Context();
-            return context.Users.Include(x => x.WorkLocation).ToList();
+            var result = context.Users
+                .Include(x => x.WorkLocation)
+                .ToList();
+
+            return result;
         }
     }
 }
