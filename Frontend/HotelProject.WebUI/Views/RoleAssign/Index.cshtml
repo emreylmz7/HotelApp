@@ -1,0 +1,48 @@
+@model List<UserWithRoleDto>
+
+@{
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<div class="mt-4">
+    <h1 class="mb-4">User Roles</h1>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>User</th>
+                    <th>Roles</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="~/adminweb/images/avatar/@user.ImageUrl" class="rounded-circle" alt="User Avatar" width="40" height="40">
+                                <div class="ml-3">
+                                    <p class="mb-0">@($"{user.Name} {user.Surname}")</p>
+            
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-wrap">
+                                @foreach (var role in user.Roles!)
+                                {
+                                    <span class="badge badge-info mr-1">@role</span>
+                                }
+                            </div>
+                        </td>
+                        <td>
+                            <a href="@Url.Action("AssignRole", "RoleAssign", new { userId = user.UserId })" class="btn btn-primary btn-sm">Assign Role</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

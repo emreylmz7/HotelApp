@@ -1,0 +1,94 @@
+@model BookingUpdateDto
+
+@{
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<form action="" method="post" class="mt-4">
+
+    <input type="hidden" asp-for="BookingID">
+
+    <fieldset>
+        <legend class="text-center">Contact Information</legend>
+
+        <div class="form-group">
+            <label asp-for="Name">Name</label>
+            <input type="text" asp-for="Name" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Mail">Email</label>
+            <input type="text" asp-for="Mail" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label asp-for="City">City</label>
+            <input type="text" asp-for="City" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Country">Country</label>
+            <input type="text" asp-for="Country" class="form-control">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend class="text-center">Booking Details</legend>
+
+        <div class="form-group">
+            <label asp-for="CheckIn">Check-In Date</label>
+            <input type="date" asp-for="CheckIn" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label asp-for="CheckOut">Check-Out Date</label>
+            <input type="date" asp-for="CheckOut" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label asp-for="AdultCount">Number of Adults</label>
+            <input type="text" asp-for="AdultCount" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ChildCount">Number of Children</label>
+            <input type="text" asp-for="ChildCount" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label asp-for="RoomCount">Number of Rooms</label>
+            <input type="text" asp-for="RoomCount" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label asp-for="SpecialRequest">Special Requests</label>
+            <textarea asp-for="SpecialRequest" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Description">Description</label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+        </div>
+
+
+        <div class="form-group">
+            <label asp-for="Status">Status</label>
+            <select asp-for="Status" class="form-control">
+                <option value="Pending">Pending</option>
+                <option value="Confirmed">Confirmed</option>
+                <option value="Canceled">Canceled</option>
+                <option value="CheckedIn">Checked In</option>
+                <option value="CheckedOut">Checked Out</option>
+                <option value="InProgress">In Progress</option>
+                <option value="Completed">Completed</option>
+                <option value="NoShow">No Show</option>
+                <option value="CustomerBeingSearched">Customer Being Searched</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+    </fieldset>
+
+    <button type="submit" class="btn btn-primary">Update Booking</button>
+
+</form>
+

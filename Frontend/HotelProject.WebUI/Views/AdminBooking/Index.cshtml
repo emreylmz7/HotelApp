@@ -33,14 +33,34 @@
                             <tr>
                                 <th>@count</th>
                                 <td>@item.Name</td>
-                                <td><span class="badge badge-primary px-2">@item.Status</span></td>
+                                <td>
+                                    @{
+                                        string badgeClass = "badge-primary";
+                                        switch (item.Status)
+                                        {
+                                            case BookingStatus.Confirmed:
+                                                badgeClass = "badge-success";
+                                                break;
+                                            case BookingStatus.Pending:
+                                                badgeClass = "badge-warning";
+                                                break;
+                                            case BookingStatus.Canceled:
+                                                badgeClass = "badge-danger";
+                                                break;
+                                            // Add more cases if needed
+                                            default:
+                                                break;
+                                        }
+                                    }
+                                    <span class="badge @badgeClass px-2">@item.Status</span>
+                                </td>
                                 <td>@(((DateTime)item.CheckIn).ToString("dd-MMM-yyyy"))</td>
                                 <td>@(((DateTime)item.CheckOut).ToString("dd-MMM-yyyy"))</td>
                                 <td><a href="/AdminBooking/ApprovedReservation/@item.BookingID" class="btn btn-outline-primary">Approve</a></td>
-                                <td><a href="#" class="btn btn-outline-warning  ">Hold On</a></td>
-                                <td><a href="#" class="btn btn-outline-danger">Cancel</a></td>
-                                <td><a href="#" class="btn btn-outline-success">Update</a></td>
-                                <td><a href="#" class="btn btn-outline-info">Details</a></td>
+                                <td><a href="/AdminBooking/PendingReservation/@item.BookingID" class="btn btn-outline-warning  ">Hold On</a></td>
+                                <td><a href="/AdminBooking/CancelReservation/@item.BookingID" class="btn btn-outline-danger">Cancel</a></td>
+                                <td><a href="/AdminBooking/UpdateBooking/@item.BookingID" class="btn btn-outline-success">Update</a></td>
+                                <td><a href="/AdminBooking/UpdateBooking/@item.BookingID" class="btn btn-outline-info">Details</a></td>
                             </tr>
                         }               
                     </tbody>

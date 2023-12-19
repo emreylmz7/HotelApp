@@ -1,0 +1,32 @@
+@model UserEditViewModel
+
+@{
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<h1>Profile Settings</h1>
+
+<form action="" method="post">
+
+    <label>Name</label>
+    <input type="text" asp-for="Name" class="form-control">
+    <br>
+    <label>Surname</label>
+    <input type="text" asp-for="Surname" class="form-control">
+    <br>
+    <label>Email</label>
+    <input type="text" asp-for="Email" class="form-control">
+    <br>
+    <label>Username</label>
+    <input type="text" asp-for="Username" class="form-control" readonly>
+    <br>
+    <label>Password</label>
+    <input type="password" asp-for="Password" class="form-control">
+    <br>
+    <label>Confirm Password</label>
+    <input type="password" asp-for="ConfirmPassword" class="form-control">
+    <br>
+
+    <button type="submit" class="btn btn-success">Update Profile</button>
+
+</form>

@@ -1,0 +1,31 @@
+@model List<RoleAssignViewModel>
+
+@{
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<div class="mt-4">
+    <h1 class="mb-4">Role Assignments</h1>
+
+    <form action="" method="post">
+        <div class="list-group">
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <div class="list-group-item">
+                    <input type="hidden" asp-for="@Model[i].RoleID" />
+                    <input type="hidden" asp-for="@Model[i].RoleName" />
+
+                    <div class="form-check">
+                        <input type="checkbox" asp-for="@Model[i].RoleExist" class="form-check-input" />
+
+                        <label class="form-check-label" for="@Model[i].RoleExist">
+                            @Model[i].RoleName
+                        </label>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Update Roles</button>
+    </form>
+</div>

@@ -40,7 +40,14 @@
                         <a href="/Booking/Index/" class="nav-item nav-link">Reservations</a>
                         <a href="/Contact/Index/" class="nav-item nav-link">Contact</a>
                         <a href="contact.html" class="nav-item nav-link">FAQ</a>
-                        <a href="/Login/Index/" class="nav-item nav-link">Login</a>
+                        @if(User.Identity!.IsAuthenticated)
+                        {
+                            <a href="/Dashboard/Index/" class="nav-item nav-link">Dashboard</a>
+                        }
+                        else 
+                        {
+                            <a href="/Login/Index/" class="nav-item nav-link">Login</a>
+                        }
                     </div>
                 </div>
             </nav>

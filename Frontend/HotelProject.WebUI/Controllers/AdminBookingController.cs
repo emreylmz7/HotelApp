@@ -33,20 +33,71 @@ namespace HotelProject.WebUI.Controllers
             return View();
         }
 
-        [HttpPost]
-        public async Task<IActionResult> ApprovedReservation(ApprovedReservationDto model)
+        [HttpGet]
+        public async Task<IActionResult> UpdateBooking(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonConvert.SerializeObject(model);
-            StringContent stringContent = new StringContent(jsonData,Encoding.UTF8,"application/json");
-            var responseMessage = await client.PutAsync("http://localhost:5224/api/Booking/ApprovedBooking", stringContent);
+            var responseMessage = await client.GetAsync($"http://localhost:5224/api/Booking/{id}");
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                var jsonData = await responseMessage.Content.ReadAsStringAsync();
+                var value = JsonConvert.DeserializeObject<BookingUpdateDto>(jsonData);
+                return View(value);
+            }
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> UpdateBooking(BookingUpdateDto model)
+        {
+            if (ModelState.IsValid)
+            {
+                var client = _httpClientFactory.CreateClient();
+                var jsonData = JsonConvert.SerializeObject(model);
+                StringContent stringContent = new StringContent(jsonData,Encoding.UTF8,"application/json");
+                var responseMessage = await client.PutAsync("http://localhost:5224/api/Booking/",stringContent);
+
+                if (responseMessage.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Index");
+                }
+                return View();
+            }
+            else
+            {
+                return View();
+            }
+        }
+
+        public async Task<IActionResult> ApprovedReservation(int id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync($"http://localhost:5224/api/Booking/ApprovedBooking?id={id}");
+
+            return RedirectToAction("Index");
+        }
+      
+        public async Task<IActionResult> CancelReservation(int id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync($"http://localhost:5224/api/Booking/CanceledBooking?id={id}");
 
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");
             }
             return View();
+        }
 
+        public async Task<IActionResult> PendingReservation(int id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync($"http://localhost:5224/api/Booking/PendingBooking?id={id}");
+
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index");
+            }
+            return View();
         }
     }
 }
