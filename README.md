@@ -1,6 +1,6 @@
 
 
-# Residensea Hotel Management System
+# Residensea Hotel API Projesi
 
 Bu proje, .NET Core 7, Web API, N-tier architecture ve Repository Design Pattern kullanılarak ve Code First yaklaşımıyla geliştirilmiş bir otel yönetim sistemidir. Ayrıca, Mail servisleri ve Identity kütüphanesi de entegre edilmiştir. Projede, müşteri yönetimi, oda rezervasyonları, personel takibi gibi temel otel işlemleri bulunmaktadır.
 
