@@ -4,20 +4,7 @@
 
 Bu proje, .NET Core 7, Web API, N-tier architecture ve Repository Design Pattern kullanılarak ve Code First yaklaşımıyla geliştirilmiş bir otel yönetim sistemidir. Ayrıca, Mail servisleri ve Identity kütüphanesi de entegre edilmiştir. Projede, müşteri yönetimi, oda rezervasyonları, personel takibi gibi temel otel işlemleri bulunmaktadır.
 
-
-## Ekran Görüntüleri
-
 ![1](https://github.com/emreylmz7/HotelApp/assets/65964414/63e3fadd-ddb8-4f0a-be9e-58408cbf53c1)
-
-![2](https://github.com/emreylmz7/HotelApp/assets/65964414/341b96f6-241a-4a3c-9fce-52210313be2f)
-![3](https://github.com/emreylmz7/HotelApp/assets/65964414/0eb895df-997e-4a71-b457-a27e46b743e7)
-![7](https://github.com/emreylmz7/HotelApp/assets/65964414/70e4b764-574f-47f1-8e2f-5a199e7188d7)
-![9](https://github.com/emreylmz7/HotelApp/assets/65964414/309eb5ab-379e-4a99-9319-0352f62ed0f1)
-![10](https://github.com/emreylmz7/HotelApp/assets/65964414/11c418b4-8928-40ec-ba6b-6ed00de4aabc)
-![12](https://github.com/emreylmz7/HotelApp/assets/65964414/d3c65725-2ae4-4afc-92dc-0b7ed921c8a6)
-![13](https://github.com/emreylmz7/HotelApp/assets/65964414/af558149-a30c-4b48-a30b-b0e43b173a2f)
-![14](https://github.com/emreylmz7/HotelApp/assets/65964414/d775656a-65dc-43af-8676-a787dcfc50b3)
-
   
 ## Kullanılan Teknolojiler
 
@@ -61,6 +48,16 @@ Bu proje çalıştırılmadan önce aşağıdaki gereksinimlere ihtiyaç duyar:
 **.NET Core 7.0 SDK:** Projenin çalıştırılabilmesi için .NET Core 7.0 SDK'nın bilgisayarınıza kurulu olması gerekmektedir. .NET Core SDK İndirme Sayfası
 
 **MSSQL Server:** Veritabanı olarak MSSQL kullanıldığından, MSSQL Server'ın bilgisayarınıza kurulu olması gerekmektedir.
+
+## Ekran Görüntüleri
+![3](https://github.com/emreylmz7/HotelApp/assets/65964414/0eb895df-997e-4a71-b457-a27e46b743e7)
+![2](https://github.com/emreylmz7/HotelApp/assets/65964414/341b96f6-241a-4a3c-9fce-52210313be2f)
+![7](https://github.com/emreylmz7/HotelApp/assets/65964414/70e4b764-574f-47f1-8e2f-5a199e7188d7)
+![9](https://github.com/emreylmz7/HotelApp/assets/65964414/309eb5ab-379e-4a99-9319-0352f62ed0f1)
+![10](https://github.com/emreylmz7/HotelApp/assets/65964414/11c418b4-8928-40ec-ba6b-6ed00de4aabc)
+![12](https://github.com/emreylmz7/HotelApp/assets/65964414/d3c65725-2ae4-4afc-92dc-0b7ed921c8a6)
+![13](https://github.com/emreylmz7/HotelApp/assets/65964414/af558149-a30c-4b48-a30b-b0e43b173a2f)
+![14](https://github.com/emreylmz7/HotelApp/assets/65964414/d775656a-65dc-43af-8676-a787dcfc50b3)
 
 
 
