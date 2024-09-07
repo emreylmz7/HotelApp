@@ -1,55 +1,43 @@
 
 
-# Residensea Hotel API Projesi
+# Residensea Hotel Project
 
-Bu proje, .NET Core 7, Web API, N-tier architecture ve Repository Design Pattern kullanılarak ve Code First yaklaşımıyla geliştirilmiş bir otel yönetim sistemidir. Ayrıca, Mail servisleri ve Identity kütüphanesi de entegre edilmiştir. Projede, müşteri yönetimi, oda rezervasyonları, personel takibi gibi temel otel işlemleri bulunmaktadır.
+Welcome to the Residensea Hotel API project! This is a comprehensive hotel management system developed using .NET Core 7, employing Web API, N-tier architecture, and the Repository Design Pattern with a Code First approach. The system integrates Mail services and the Identity library, providing core functionalities such as customer management, room reservations, and staff tracking.
 
-![1](https://github.com/emreylmz7/HotelApp/assets/65964414/63e3fadd-ddb8-4f0a-be9e-58408cbf53c1)
-  
-## Kullanılan Teknolojiler
+![Project Overview](https://github.com/emreylmz7/HotelApp/assets/65964414/63e3fadd-ddb8-4f0a-be9e-58408cbf53c1)
 
-Bu projede aşağıdaki teknolojiler ve özellikler kullanılmıştır:
+## Technologies and Features
 
-**ASP.NET Core API ve Identity:** RESTful servisler ve kullanıcı yönetimi için ASP.NET Core API ve Identity kullanılmıştır.
+This project utilizes the following technologies and features:
 
-**Swagger ve Postman:** API belgeleme ve test için Swagger kullanılırken, Postman ile API test edilmiştir.
+- **ASP.NET Core API and Identity:** For RESTful services and user management.
+- **Swagger and Postman:** For API documentation and testing.
+- **Rapid API:** For integrating external sources and social media data, with a Postman collection provided for API consumption.
+- **JSON Web Token (JWT):** For user authentication.
+- **ASP.NET Core 7.0 and MVC:** The project is developed with ASP.NET Core 7.0, using the MVC design pattern.
+- **Fluent Validation:** For form validation.
+- **MSSQL and Entity Framework Core:** For database operations, employing the Repository Design Pattern.
+- **SMTP:** For sending emails related to user registration and password resets.
 
-**Rapid API ve API Tüketimi:** Dış kaynaklar, Sosyal medya verileri ve hızlı entegrasyonlar için Rapid API kullanılmış, API tüketimi için Postman koleksiyonu sağlanmıştır.
+## Project Structure
 
-**JSON Web Token (JWT):** Kullanıcı kimlik doğrulama işlemleri için JWT kullanılmıştır.
+The project follows a layered architecture with the following main components:
 
-**ASP.NET Core 7.0 ve MVC:** Proje, ASP.NET Core 7.0 sürümü kullanılarak geliştirilmiş ve MVC tasarım deseni kullanılmıştır.
+- **Presentation Layer:** Contains the Web API and handles user interface interactions. It includes a Web UI layer that provides the interfaces for user interaction.
+- **Business Layer:** Manages business logic, processes requests, and updates the presentation layer with results.
+- **Data Access Layer:** Handles database operations using the Repository Design Pattern.
+- **Database:** Stores data related to hotel management, including customer information, room reservations, and staff tracking.
+- **Web UI:** Provides the web interface for user interaction with the system.
 
-**Fluent Validation:** Form validasyonları için Fluent Validation kullanılmıştır.
+## Requirements
 
-**MSSQL ve Entity Framework Core:** Veritabanı olarak MSSQL kullanılmıştır. Veritabanı işlemleri için Entity Framework Core ve Repository Design Pattern kullanılmıştır.
+Before running the project, ensure you have the following installed:
 
-**Mail Gönderme İşlemleri:** Kullanıcı kaydı veya şifre sıfırlama gibi durumlarda mail gönderme işlemleri için SMTP kullanılmıştır.
-  
-## Proje Yapısı ve Katmanlı Mimari
+- **.NET Core 7.0 SDK:** Required to build and run the project. [Download .NET Core SDK](https://dotnet.microsoft.com/download/dotnet/7.0)
+- **MSSQL Server:** Required for the database. Ensure MSSQL Server is installed on your machine.
 
-Proje, katmanlı mimari prensiplerini takip eder ve şu ana bileşenleri içerir:
-
-**Presentation Layer (Sunum Katmanı):** Kullanıcı arayüzü ile etkileşim sağlanan katmandır. Bu katman, Web API'yi barındırır ve gelen istekleri işler. Ayrıca, projenin kullanıcı arayüzü ile etkileşimde bulunacak olan Web UI (web kullanıcı arayüzü) katmanı eklenmiştir. Bu katman, kullanıcıların projeyi kullanmalarını sağlayacak arayüzleri içerir.
-
-**Business Layer (İş Katmanı):** İş mantığının gerçekleştirildiği katmandır. Bu katman, gelen istekleri işleyerek veritabanı işlemlerini başlatır ve sonuçları sunum katmanına ileterek kullanıcı arayüzünü günceller.
-
-**Data Access Layer (Veri Erişim Katmanı):** Veritabanı işlemlerinin gerçekleştirildiği katmandır. Bu katman, Repository Design Pattern kullanılarak veritabanı ile iletişim kurar.
-
-**Database:** Proje, otel yönetim sistemine ait verileri depolamak için bir veritabanı kullanır. Veritabanı, müşteri bilgileri, oda rezervasyonları, personel takibi gibi temel verileri içerir.
-
-**Web UI (Web Kullanıcı Arayüzü):** Kullanıcıların projeyi kullanmalarını sağlayacak arayüzleri içeren katmandır. Bu katman, kullanıcıların sistemle etkileşimde bulunabilecekleri bir web arayüzü sunar.
-
-  
-## Gereksinimler
-
-Bu proje çalıştırılmadan önce aşağıdaki gereksinimlere ihtiyaç duyar:
-
-**.NET Core 7.0 SDK:** Projenin çalıştırılabilmesi için .NET Core 7.0 SDK'nın bilgisayarınıza kurulu olması gerekmektedir. .NET Core SDK İndirme Sayfası
-
-**MSSQL Server:** Veritabanı olarak MSSQL kullanıldığından, MSSQL Server'ın bilgisayarınıza kurulu olması gerekmektedir.
-
-## Ekran Görüntüleri
+## Screenshots
+Here are some screenshots of the project's user interface:
 ![3](https://github.com/emreylmz7/HotelApp/assets/65964414/0eb895df-997e-4a71-b457-a27e46b743e7)
 ![2](https://github.com/emreylmz7/HotelApp/assets/65964414/341b96f6-241a-4a3c-9fce-52210313be2f)
 ![7](https://github.com/emreylmz7/HotelApp/assets/65964414/70e4b764-574f-47f1-8e2f-5a199e7188d7)
